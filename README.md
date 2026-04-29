@@ -4,6 +4,12 @@
 :pencil: **Desarrollador**
 :family: **Excelente**
 
+### :zap: Actividad Reciente
+
+<!--START_SECTION:activity-->
+
+<!--END_SECTION:activity-->
+
 ### Contacto
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjose-luis-retana-cabrera-1079823b0%2F)
 
