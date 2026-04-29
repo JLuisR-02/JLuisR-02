@@ -1,0 +1,21 @@
+name: Update README2
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Update Profile README
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Readme-WorkFlows/recent-activity@v2.3.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          COMMIT_MSG: "Update recent activity"
+          MAX_LINES: 10
+          COMMIT_NAME: GitHub Activity Readme
+          COMMIT_EMAIL: github-actions[bot]@users.noreply.github.com
+          FILTER_EVENTS: PushEvent,CreateEvent,IssueCommentEvent,IssuesEvent,PullRequestEvent,ReleaseEvent,WatchEvent,ForkEvent
